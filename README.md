@@ -56,3 +56,5 @@ Exercises with tests will specify which string to pass with `-DTESTING`, but a t
 | Write the A\* Search Stub   |        "AStarStub"       |
 | Finish A\* Search           |       "AStarSearch"      |
 
+## About A* search algorithm
+The A start search algorithm performs a best-first search, which means that at each step, it expands the most promising neighbor node until it reaches the goal. This also means that A start might explore some paths that don't work out before it finds the best path.
