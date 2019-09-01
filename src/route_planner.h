@@ -14,10 +14,14 @@ class RoutePlanner {
     void AStarSearch();
 
   private:
+    void AddNeighbors(RouteModel::Node *current_node);
+    float CalculateHValue(RouteModel::Node *node); 
     std::vector<RouteModel::Node> ConstructFinalPath(RouteModel::Node *);
 
     RouteModel &m_Model;
     RouteModel::Node *start_node;
     RouteModel::Node *end_node;
+    RouteModel::Node *NextNode();
     float distance;
+    std::vector<RouteModel::Node*> open_list;
 };
